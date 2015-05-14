@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+	<link rel="stylesheet" href="js/jquery/jquery.mobile-1.4.5.min.css" />
+	<script src="js/jquery/jquery.min.js"></script>
+	<script src="js/jquery/jquery.mobile-1.4.5.min.js"></script>
+
+	<script src="js/login.js"></script>
+
+        <title>witr cordova template - login</title>
+    </head>
+
+<body>
+
+    <!-- login page -->
+    <div data-role="page" id="login">
+
+	<!-- login header -->
+        <div data-theme="a" data-role="header">
+            <h3>login form</h3>
+        </div>
+
+	<!-- login form -->
+        <div data-role="content">
+            <label for="username">username</label>
+            <input type="text" value="" name="username" id="username"/>
+            <label for="password">password</label>
+            <input type="password" value="" name="password" id="password"/>  
+            <a data-role="button" id="login-button" data-theme="b">Login</a>
+        </div>
+
+	<!-- login footer -->
+        <div data-theme="a" data-role="footer" data-position="fixed">
+		<h3>witr.net</h3>
+	</div>
+
+    </div>
+
+    <!-- home page -->
+    <div data-role="page" id="index">
+
+	<!-- home pager header -->
+        <div data-theme="a" data-role="header">
+            <h3></h3>
+        </div>
+
+	<!-- home page body -->
+        <div data-role="content">
+            you are logged in
+        </div>
+
+	<!-- home page footer -->
+        <div data-theme="a" data-role="footer" data-position="fixed">
+            <h3>witr.net</h3>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
